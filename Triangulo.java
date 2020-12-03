@@ -1,14 +1,21 @@
-package Triangulo;
 //Desenvolvido por Rodrigo Brito
 
-import java.util.Scanner;
-
+package Triangulo;
+import java.util.*;
 public class Triangulo {
-
-	int base;
-	int altura;
-	int total;
-
+	
+	//variaveis
+	private int base, altura, total;
+	
+	//Construtor
+	public Triangulo() {
+		
+		this.base = base;
+		this.altura = altura;
+		this.total = total;
+	}
+	
+	//Getters & Setters
 	public int getBase() {
 		return base;
 	}
@@ -33,6 +40,7 @@ public class Triangulo {
 		this.total = total;
 	}
 	
+	//método que calcula a área
 	void calculaBase(Scanner scan) {
 		
 		System.out.println("----------------------------");
@@ -40,5 +48,7 @@ public class Triangulo {
 		base = scan.nextInt();
 		System.out.println("Digite a altura do triangulo: ");
 		altura = scan.nextInt();
+		total = (base * altura) / 2;
+		System.out.println("O total da área do triangulo é " + total);
 	}
 }
