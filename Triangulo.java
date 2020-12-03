@@ -8,7 +8,7 @@ public class Triangulo {
 	private int base, altura, total;
 	
 	//Construtor
-	public Triangulo() {
+	public Triangulo(int base, int altura, int total) {
 		
 		this.base = base;
 		this.altura = altura;
